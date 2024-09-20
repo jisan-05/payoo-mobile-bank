@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
     <meta charset="UTF-8" />
@@ -25,20 +25,20 @@
                                             <span class="label-text">Number</span>
                                         </label>
                                         <input type="text" placeholder="Enter number" class="input input-bordered"
-                                            required />
+                                            id="phone-number" required />
                                     </div>
                                     <div class="form-control">
                                         <label class="label">
                                             <span class="label-text">Password</span>
                                         </label>
-                                        <input type="password" placeholder="password" class="input input-bordered"
-                                            required />
+                                        <input type="password" placeholder="password" id="pin-number" autocomplete="off"
+                                            class="input input-bordered" required />
                                         <label class="label">
                                             <a href="#" class="label-text-alt link link-hover">Forgot password?</a>
                                         </label>
                                     </div>
                                     <div class="form-control mt-6">
-                                        <button class="btn btn-primary">
+                                        <button class="btn btn-primary" id="button-login">
                                             Login
                                         </button>
                                     </div>
@@ -50,6 +50,8 @@
             </div>
         </div>
     </section>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
