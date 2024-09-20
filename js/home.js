@@ -15,4 +15,25 @@ document
         const pinNumberInput =
             document.getElementById("input-pin-number").value;
         console.log(pinNumberInput);
+
+        // step 3 --> Verify pin number
+        // Wrong way to validate pin number cheak
+        if (pinNumberInput === "1234") {
+            // step 4 --> Get the current balance
+            const balance = document.getElementById('account-balance').innerText;
+            console.log(balance)
+
+            // step - 5 : add addMoneyInput with balance
+            const addMoneyNumber = parseFloat(addMoneyInput);
+            const balanceNumber = parseFloat(balance);
+            const newBalance = addMoneyNumber + balanceNumber;
+            console.log(newBalance)
+
+
+            //step 6 Update the balance in the UI/ design
+            document.getElementById('account-balance').innerText = newBalance;
+
+        } else {
+            alert("failed to add money ! please try again");
+        }
     });
